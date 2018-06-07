@@ -332,7 +332,7 @@ Set to `exclude' so the next matched char is excluded in the region.")
   "Store jump step N and jump CHAR for `iy-go-to-char--command'.
 If STOP-POSITION is not `include', jump up to char but excluding the char."
   (interactive "p\ncGo to char: ")
-  (setq iy-go-to-char-last-step n)
+  (setq iy-go-to-char-last-step 1)
   (setq iy-go-to-char-last-char char)
   (setq iy-go-to-char-stop-position stop-position)
   (unless iy-go-to-char-start-pos
